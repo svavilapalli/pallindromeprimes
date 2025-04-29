@@ -4,7 +4,7 @@ import math
 primes = [2]
 
 def sieve_of_eratosthenes(n):
-    p = 2
+    p = 3
     while p <= int(math.sqrt(n))+1:
         isprime = True
         for i in range(0,len(primes)):
@@ -13,7 +13,7 @@ def sieve_of_eratosthenes(n):
                 break
         if isprime:
             primes.append(p)
-        p = p + 1
+        p = p + 2
 
 def is_prime(n):
     if n==1:
